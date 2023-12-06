@@ -1,0 +1,10 @@
+{
+  "@@locale": "fr",
+  "files": "Fichiers",
+  "scanner": "Scanner",
+  "settings": "Réglages",
+  "profile": "Profil",
+  "main": "cardinal",
+  "recentFiles": "Fichiers récents",
+  "favorites": "Favoris"
+}

@@ -1,0 +1,10 @@
+{
+  "@@locale": "en",
+  "files": "Files",
+  "scanner": "Scanner",
+  "settings": "Settings",
+  "profile": "Profile",
+  "main": "Main",
+  "recentFiles": "Recent files",
+  "favorites": "Favorites"
+}

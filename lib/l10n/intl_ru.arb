@@ -1,0 +1,10 @@
+{
+  "@@locale": "ru",
+  "files": "Файлы",
+  "scanner": "Сканер",
+  "settings": "Настройки",
+  "profile": "Профиль",
+  "main": "Главная",
+  "recentFiles": "Недавние файлы",
+  "favorites": "Избранное"
+}
