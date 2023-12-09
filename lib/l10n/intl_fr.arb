@@ -6,5 +6,8 @@
   "profile": "Profil",
   "main": "cardinal",
   "recentFiles": "Fichiers récents",
-  "favorites": "Favoris"
+  "favorites": "Favoris",
+  "addFile": "Ajouter le fichier",
+  "recentlyYourFiles": "Vos fichiers avec lesquels vous avez travaillé récemment apparaîtront ici",
+  "favoriteYourFiles": "Vos fichiers favoris apparaîtront ici"
 }

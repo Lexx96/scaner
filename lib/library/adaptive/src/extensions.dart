@@ -29,5 +29,5 @@ extension DeviceExt on num {
   double get wA => Device.width / Device.widthFigma * toDouble();
 
   /// Адаптация размера на меньшее из изменений сторон экрана устройства
-  double get adaptive => min(hA, wA);
+  double get a => min(hA, wA);
 }

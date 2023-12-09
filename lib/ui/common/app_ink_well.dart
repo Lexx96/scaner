@@ -31,6 +31,8 @@ class AppInkWell extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
+      fit: StackFit.passthrough,
+      alignment: Alignment.center,
       children: [
         child,
         Positioned.fill(

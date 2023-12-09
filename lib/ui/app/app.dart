@@ -6,10 +6,10 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 import 'widgets/app_ui_settings.dart';
 
-/// Корневой виджет приложения
 class App extends StatelessWidget {
   final RouterConfig<Object> config;
 
+  /// Корневой виджет приложения
   const App({super.key, required this.config});
 
   @override

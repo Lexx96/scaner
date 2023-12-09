@@ -21,11 +21,14 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "addFile" : MessageLookupByLibrary.simpleMessage("Добавить файл"),
+    "favoriteYourFiles" : MessageLookupByLibrary.simpleMessage("Здесь появятся Ваши избранные файлы"),
     "favorites" : MessageLookupByLibrary.simpleMessage("Избранное"),
     "files" : MessageLookupByLibrary.simpleMessage("Файлы"),
     "main" : MessageLookupByLibrary.simpleMessage("Главная"),
     "profile" : MessageLookupByLibrary.simpleMessage("Профиль"),
     "recentFiles" : MessageLookupByLibrary.simpleMessage("Недавние файлы"),
+    "recentlyYourFiles" : MessageLookupByLibrary.simpleMessage("Здесь появятся Ваши файлы, с которыми Вы работали в последнее время"),
     "scanner" : MessageLookupByLibrary.simpleMessage("Сканер"),
     "settings" : MessageLookupByLibrary.simpleMessage("Настройки")
   };

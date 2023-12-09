@@ -58,7 +58,10 @@ class IFilesPage implements AutoRouteWrapper {
 
   @override
   Widget wrappedRoute(_) {
-    return WidgetFactory.files();
+    return ChangeNotifierProvider(
+      create: (BuildContext context) => _diContainer._makeFilesVM(context),
+      child: const FilesPage(),
+    );
   }
 }
 
@@ -68,7 +71,10 @@ class IMainPage implements AutoRouteWrapper {
 
   @override
   Widget wrappedRoute(_) {
-    return WidgetFactory.main();
+    return ChangeNotifierProvider(
+      create: _diContainer._makeMainVM,
+      child: const MainPage(),
+    );
   }
 }
 
@@ -78,7 +84,7 @@ class ISettingsPage implements AutoRouteWrapper {
 
   @override
   Widget wrappedRoute(_) {
-    return WidgetFactory.settings();
+    return const SettingsPage();
   }
 }
 
@@ -88,7 +94,7 @@ class IProfilePage implements AutoRouteWrapper {
 
   @override
   Widget wrappedRoute(_) {
-    return WidgetFactory.profile();
+    return const ProfilePage();
   }
 }
 

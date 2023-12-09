@@ -6,5 +6,8 @@
   "profile": "Profile",
   "main": "Main",
   "recentFiles": "Recent files",
-  "favorites": "Favorites"
+  "favorites": "Favorites",
+  "addFile": "Add file",
+  "recentlyYourFiles": "Your files that you have worked with recently will appear here",
+  "favoriteYourFiles": "Your favorite files will appear here"
 }

@@ -40,7 +40,7 @@ extension ThemeExtension on BuildContext {
   }) {
     return theme.textTheme.titleSmall?.copyWith(
       fontFamily: fontFamily,
-      fontSize: fontSize.adaptive,
+      fontSize: fontSize.a,
       fontWeight: fontWeight,
       color: color,
       height: height,
@@ -72,7 +72,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive,
+      fontSize: fontSize?.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -85,7 +85,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive,
+      fontSize: fontSize?.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -98,7 +98,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive,
+      fontSize: fontSize?.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -113,7 +113,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 18.adaptive,
+      fontSize: fontSize?.a ?? 18.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -126,7 +126,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 18.adaptive,
+      fontSize: fontSize?.a ?? 18.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -139,7 +139,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 18.adaptive,
+      fontSize: fontSize?.a ?? 18.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -154,7 +154,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -167,7 +167,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -180,7 +180,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -195,7 +195,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -208,7 +208,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -221,7 +221,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 16.adaptive,
+      fontSize: fontSize?.a ?? 16.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -236,7 +236,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -249,7 +249,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -262,7 +262,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
     );
@@ -277,7 +277,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -290,7 +290,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -303,7 +303,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -318,7 +318,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -331,7 +331,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -344,7 +344,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -372,7 +372,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodyMedium?.copyWith(
-      fontSize: fontSize?.adaptive,
+      fontSize: fontSize?.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -385,7 +385,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodySmall?.copyWith(
-      fontSize: fontSize?.adaptive,
+      fontSize: fontSize?.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -400,7 +400,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodyLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -413,7 +413,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodyMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -426,7 +426,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodySmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -441,7 +441,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodyLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 12.adaptive,
+      fontSize: fontSize?.a ?? 12.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -454,7 +454,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodyMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 12.adaptive,
+      fontSize: fontSize?.a ?? 12.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -467,7 +467,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.bodySmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 12.adaptive,
+      fontSize: fontSize?.a ?? 12.a,
       fontWeight: fontWeight,
       color: color,
     );
@@ -482,7 +482,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color ?? theme.cardColor,
       letterSpacing: 0.5,
@@ -496,7 +496,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
       letterSpacing: 0.5,
@@ -510,7 +510,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: AppColorsLight.deepPurpleBlue,
       letterSpacing: 0.5,
@@ -524,7 +524,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight ?? FontWeight.w600,
       color: color,
       letterSpacing: 0.5,
@@ -540,7 +540,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
       decoration: TextDecoration.underline,
@@ -554,7 +554,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineMedium?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
       decoration: TextDecoration.underline,
@@ -568,7 +568,7 @@ extension ThemeExtension on BuildContext {
     Color? color,
   }) {
     return theme.textTheme.headlineSmall?.copyWith(
-      fontSize: fontSize?.adaptive ?? 14.adaptive,
+      fontSize: fontSize?.a ?? 14.a,
       fontWeight: fontWeight,
       color: color,
       decoration: TextDecoration.underline,
@@ -603,7 +603,7 @@ extension AppThemeData on ThemeData {
 
   /// Цвет градиента
   List<Color> get gradient =>
-      isLightThemeMode ? [AppColorsLight.orangeDawn, AppColorsLight.orangeDawn] : [
+      isLightThemeMode ? [AppColorsLight.orangeDawn, AppColorsLight.red, AppColorsLight.pink] : [
         AppColorsDark.white,
         AppColorsDark.blackSky
       ];

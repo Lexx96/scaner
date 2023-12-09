@@ -7,24 +7,4 @@ part of 'app_factory.dart';
 ///
 /// Example: homePage
 
-abstract class WidgetFactory {
-
-  static Widget files() {
-    return ChangeNotifierProvider(
-      create: (BuildContext context) => _diContainer._makeFilesVM(context),
-      child: const FilesPage(),
-    );
-  }
-
-  static Widget main() {
-    return const MainPage();
-  }
-
-  static Widget settings() {
-    return const SettingsPage();
-  }
-
-  static Widget profile() {
-    return const ProfilePage();
-  }
-}
+abstract class WidgetFactory {}

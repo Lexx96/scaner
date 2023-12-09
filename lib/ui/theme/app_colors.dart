@@ -43,8 +43,6 @@ abstract class AppColorsLight {
 
   /// ---------------------------Не использующиеся---------------------------
 
-
-
   /// Прозрачный
   static const transparent = Colors.transparent;
 
@@ -68,8 +66,6 @@ abstract class AppColorsLight {
 
   /// 246, 246, 246, 1
   static const gray1 = Color.fromRGBO(246, 246, 246, 1);
-
-
 
   /// акцентные оттенки
 
@@ -105,7 +101,6 @@ abstract class AppColorsLight {
 
 /// Цвета темной темы
 abstract class AppColorsDark {
-
   /// Черный(0, 0, 0, 1)
   static const black = Color.fromRGBO(0, 0, 0, 1);
 
@@ -122,14 +117,12 @@ abstract class AppColorsDark {
   ///
   static const white = Color.fromRGBO(255, 255, 255, 1);
 
-
-
   ///
   static const grey1 = Color.fromRGBO(130, 130, 130, 1);
 
-
   ///
   static const grey7 = Color.fromRGBO(241, 241, 249, 1);
+
   ///
   static const yellow = Color.fromRGBO(255, 163, 0, 1);
 }

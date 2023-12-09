@@ -49,6 +49,12 @@ class _DIContainer {
         context: context,
       );
 
+  /// main
+  MainVM _makeMainVM(BuildContext context) => MainVM(
+        MainState(),
+        context: context,
+      );
+
   ///files
   FilesVM _makeFilesVM(BuildContext context) => FilesVM(
         state: FilesVMState(),

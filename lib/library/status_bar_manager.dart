@@ -58,7 +58,7 @@ void setEnabledSystemUIMode({
   );
 }
 
-/// Менеджер управления нативными эллементами устройства
+/// Менеджер управления нативными элементами устройства
 class StatusBarManager extends StatelessWidget {
   /// Дочерний виджет
   final Widget child;

@@ -6,5 +6,8 @@
   "profile": "Profil",
   "main": "ober",
   "recentFiles": "Aktuelle Dateien",
-  "favorites": "Favoriten"
+  "favorites": "Favoriten",
+  "addFile": "Datei hinzufügen",
+  "recentlyYourFiles": "Hier werden Ihre Dateien angezeigt, mit denen Sie kürzlich gearbeitet haben",
+  "favoriteYourFiles": "Ihre Lieblingsdateien werden hier angezeigt"
 }

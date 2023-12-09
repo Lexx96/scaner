@@ -56,7 +56,7 @@ abstract class AppTheme {
     ),
 
     /// Цвета светлой темы.
-    scaffoldBackgroundColor: AppColorsLight.white2,
+    scaffoldBackgroundColor: AppColorsLight.white,
     primaryColor: AppColorsLight.white,
     splashFactory: InkRipple.splashFactory,
     splashColor: AppColorsLight.blue.withOpacity(0.3),
@@ -194,7 +194,7 @@ abstract class AppTheme {
     ///
     /// Заголовок черный, используется в H1- H6, Subtext)
     headlineLarge: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -202,7 +202,7 @@ abstract class AppTheme {
 
     /// Заголовок синий, используется в H1- H6, Subtext)
     headlineMedium: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w500,
@@ -210,7 +210,7 @@ abstract class AppTheme {
 
     /// Заголовок серый, используется в H1- H6, Subtext)
     headlineSmall: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
@@ -218,7 +218,7 @@ abstract class AppTheme {
 
     /// Черный текст, используется в Text1, Text2, Text3
     bodyLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -227,7 +227,7 @@ abstract class AppTheme {
 
     /// Синий текст, используется в Text1, Text2, Text3
     bodyMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w500,
@@ -236,7 +236,7 @@ abstract class AppTheme {
 
     /// Серый текст, используется в Text1, Text2, Text3
     bodySmall: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
@@ -245,7 +245,7 @@ abstract class AppTheme {
 
     /// Большое название
     titleLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w600,
@@ -253,7 +253,7 @@ abstract class AppTheme {
 
     /// Среднее название (Используется системно по умолчанию  в текстФилде!)
     titleMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -261,27 +261,27 @@ abstract class AppTheme {
 
     /// Маленькое название
     titleSmall: TextStyle(
-      fontSize: 14.adaptive,
+      fontSize: 14.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
     ),
 
     labelSmall: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
       height: 1,
     ),
     labelMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: Colors.orange, // AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
     ),
     labelLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: Colors.orange, //AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -295,7 +295,7 @@ abstract class AppTheme {
     ///
     /// Заголовок черный, используется в H1- H6, Subtext)
     headlineLarge: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -303,7 +303,7 @@ abstract class AppTheme {
 
     /// Заголовок синий, используется в H1- H6, Subtext)
     headlineMedium: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w500,
@@ -311,7 +311,7 @@ abstract class AppTheme {
 
     /// Заголовок серый, используется в H1- H6, Subtext)
     headlineSmall: TextStyle(
-      fontSize: 24.adaptive,
+      fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
@@ -319,7 +319,7 @@ abstract class AppTheme {
 
     /// Черный текст, используется в Text1, Text2, Text3
     bodyLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -328,7 +328,7 @@ abstract class AppTheme {
 
     /// Синий текст, используется в Text1, Text2, Text3
     bodyMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w500,
@@ -337,7 +337,7 @@ abstract class AppTheme {
 
     /// Серый текст, используется в Text1, Text2, Text3
     bodySmall: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
@@ -346,7 +346,7 @@ abstract class AppTheme {
 
     /// Большое название
     titleLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.blackSea,
       fontWeight: FontWeight.w600,
@@ -354,7 +354,7 @@ abstract class AppTheme {
 
     /// Среднее название (Используется системно по умолчанию  в текстФилде!)
     titleMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
@@ -362,27 +362,27 @@ abstract class AppTheme {
 
     /// Маленькое название
     titleSmall: TextStyle(
-      fontSize: 14.adaptive,
+      fontSize: 14.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
     ),
 
     labelSmall: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: AppColorsLight.manatee,
       fontWeight: FontWeight.w500,
       height: 1,
     ),
     labelMedium: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: Colors.orange, // AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,
     ),
     labelLarge: TextStyle(
-      fontSize: 16.adaptive,
+      fontSize: 16.a,
       fontFamily: FontsKeys.natoMedium,
       color: Colors.orange, //AppColorsLight.deepPurpleBlue,
       fontWeight: FontWeight.w500,

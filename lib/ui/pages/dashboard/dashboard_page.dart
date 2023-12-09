@@ -1,8 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:scan_me/ui/pages/dashboard/dashboard_vm.dart';
 import 'package:scan_me/util/extensions/context_extensions.dart';
-
+import 'widgets/app_floating_action_button.dart';
 import 'widgets/src/data_tab_bar.dart';
 
 class DashboardPage extends StatelessWidget {
@@ -18,6 +20,9 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final s = context.s;
+    final model = context.read<DashboardVM>();
+    final currentIndex =
+        context.select((DashboardVM value) => value.state.currentIndex);
 
     /// Items кнопок навигационного бара
     List<ItemTabData> items = [
@@ -52,12 +57,20 @@ class DashboardPage extends StatelessWidget {
           body: child,
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: tabsRouter.activeIndex,
-            onTap: tabsRouter.setActiveIndex,
-            items: List.generate(items.length, (index) => BottomNavigationBarItem(
-              label: items[index].label,
-              icon: Icon(items[index].icon),
-            )),
+            onTap: (index) {
+              tabsRouter.setActiveIndex(index);
+              model.indexPage = index;
+            },
+            items: List.generate(
+              items.length,
+              (index) => BottomNavigationBarItem(
+                label: items[index].label,
+                icon: Icon(items[index].icon),
+              ),
+            ),
           ),
+          floatingActionButton:
+              currentIndex != 0 ? const AppFloatingActionButton() : null,
         );
       },
     );

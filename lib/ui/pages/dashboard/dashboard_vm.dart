@@ -29,8 +29,6 @@ class DashboardState {
 /// Управление состоянием [DashboardPage]
 class DashboardVM extends VMUtils<DashboardState> {
 
-  late TabController tabController;
-
   /// Принимаемые параметры
   final BuildContext context;
 
@@ -50,8 +48,6 @@ class DashboardVM extends VMUtils<DashboardState> {
     notify(
       state.copyWith(currentIndex: index),
     );
-
-    tabController.animateTo(index, duration: Duration.zero);
   }
 
   /// Изменить тип вкладок: [BodyRoutesTabBar] || [BodyWithTabBar]
@@ -59,11 +55,5 @@ class DashboardVM extends VMUtils<DashboardState> {
     notify(
       state.copyWith(isShowBodyRoutes: !state.isShowBodyRoutes),
     );
-  }
-
-  @override
-  void close() {
-    tabController.dispose();
-    super.close();
   }
 }

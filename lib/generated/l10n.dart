@@ -116,6 +116,36 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Добавить файл`
+  String get addFile {
+    return Intl.message(
+      'Добавить файл',
+      name: 'addFile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Здесь появятся Ваши файлы, с которыми Вы работали в последнее время`
+  String get recentlyYourFiles {
+    return Intl.message(
+      'Здесь появятся Ваши файлы, с которыми Вы работали в последнее время',
+      name: 'recentlyYourFiles',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Здесь появятся Ваши избранные файлы`
+  String get favoriteYourFiles {
+    return Intl.message(
+      'Здесь появятся Ваши избранные файлы',
+      name: 'favoriteYourFiles',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

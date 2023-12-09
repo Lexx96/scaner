@@ -11,6 +11,7 @@ import 'package:scan_me/ui/pages/tabs/files/files_page.dart';
 import 'package:scan_me/ui/pages/tabs/files/files_vm.dart';
 import 'package:scan_me/ui/pages/tabs/files/pages/internal/internal_page.dart';
 import 'package:scan_me/ui/pages/tabs/files/pages/internal/internal_vm.dart';
+import 'package:scan_me/ui/pages/tabs/main/main_vm.dart';
 import 'package:scan_me/ui/pages/tabs/profile/profile_page.dart';
 import 'package:scan_me/ui/pages/tabs/main/main_page.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
