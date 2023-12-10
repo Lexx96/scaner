@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:scan_me/di/app_factory.dart';
 import 'package:scan_me/library/adaptive/adaptive.dart';
+import 'package:scan_me/ui/animations/favorite_icons_pulse.dart';
 import 'package:scan_me/ui/common/cards/build_items_file_card.dart';
 import 'package:scan_me/ui/common/expanded_single_child_scroll_view.dart';
 import 'package:scan_me/ui/pages/tabs/main/main_vm.dart';
@@ -32,18 +34,20 @@ class MainPage extends StatelessWidget {
                 camera: model.onCameraTap,
                 gallery: model.onGalleryTap,
               ),
+              WidgetFactory.stockBanner(),
               BuildItemsFileCard(
                 title: s.recentFiles,
+                emptyMessage: s.recentlyYourFiles,
                 onTap: (int value) {},
                 items: state.latestFiles,
-                emptyMessage: s.recentlyYourFiles,
               ),
               SizedBox(height: 5.a),
               BuildItemsFileCard(
                 title: s.favorites,
+                emptyMessage: s.favoriteYourFiles,
                 onTap: (int value) {},
                 items: state.favoritesFiles,
-                emptyMessage: s.favoriteYourFiles,
+                titleWidget: const FavoriteIconsPulse(),
               ),
             ],
           ),
@@ -52,3 +56,5 @@ class MainPage extends StatelessWidget {
     );
   }
 }
+
+

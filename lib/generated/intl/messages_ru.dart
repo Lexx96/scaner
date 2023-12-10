@@ -26,10 +26,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "favorites" : MessageLookupByLibrary.simpleMessage("Избранное"),
     "files" : MessageLookupByLibrary.simpleMessage("Файлы"),
     "main" : MessageLookupByLibrary.simpleMessage("Главная"),
+    "pointsWatchingVideo" : MessageLookupByLibrary.simpleMessage("Получите баллы, просмотрев рекламный ролик!"),
     "profile" : MessageLookupByLibrary.simpleMessage("Профиль"),
     "recentFiles" : MessageLookupByLibrary.simpleMessage("Недавние файлы"),
     "recentlyYourFiles" : MessageLookupByLibrary.simpleMessage("Здесь появятся Ваши файлы, с которыми Вы работали в последнее время"),
     "scanner" : MessageLookupByLibrary.simpleMessage("Сканер"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Настройки")
+    "settings" : MessageLookupByLibrary.simpleMessage("Настройки"),
+    "watch" : MessageLookupByLibrary.simpleMessage("Смотреть")
   };
 }

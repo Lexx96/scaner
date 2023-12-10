@@ -18,9 +18,9 @@ part 'src/state_button.dart';
 
 part 'src/button_helper.dart';
 
-class AppButton extends StatefulWidget {
+class AppGradientButton extends StatefulWidget {
   /// Виджет кнопки с анимацией
-  const AppButton({
+  const AppGradientButton({
     super.key,
     required this.onTap,
     this.child = const SizedBox.shrink(),
@@ -53,10 +53,10 @@ class AppButton extends StatefulWidget {
   final double? height;
 
   @override
-  State<AppButton> createState() => _AppButtonState();
+  State<AppGradientButton> createState() => _AppGradientButtonState();
 }
 
-class _AppButtonState extends State<AppButton> with TickerProviderStateMixin {
+class _AppGradientButtonState extends State<AppGradientButton> with TickerProviderStateMixin {
   /// Хелпер реализации работы виджета
   late ButtonHelper buttonHelper;
 

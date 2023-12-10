@@ -63,6 +63,21 @@ extension ThemeExtension on BuildContext {
 
    */
 
+  /// Фигма H1 - Noto Sans size 24, w500, rgba (20, 24, 56, 1)
+  TextStyle? white24w500({
+    double? fontSize,
+    FontWeight? fontWeight,
+    Color? color,
+    double? height,
+  }) {
+    return theme.textTheme.headlineLarge?.copyWith(
+      fontSize: fontSize?.a,
+      fontWeight: fontWeight,
+      color: theme.adaptiveColor(AppColorsLight.white, AppColorsDark.white),
+      height: height,
+    );
+  }
+
   /// ------- Фигма H1 -  три варианта шрифта 24 размера, отличающиеся только цветом. ---------///
 
   /// Фигма H1 - Noto Sans size 24, w500, rgba (20, 24, 56, 1)

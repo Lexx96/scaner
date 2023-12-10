@@ -1,6 +1,6 @@
-part of '../app_button.dart';
+part of '../app_gradient_button.dart';
 
-/// Состояние виджета [AppButton]
+/// Состояние виджета [AppGradientButton]
 class AppButtonData {
   /// Динамически меняющийся цвет левой части кнопки
   Color leftColor;

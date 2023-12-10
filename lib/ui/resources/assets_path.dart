@@ -5,3 +5,14 @@ abstract class AssetsPath {
 
       static const splashScreen = 'assets/splash_screen/splash_screen.png';
 }
+
+/*
+
+"🤙",
+"🎉",
+"📸",
+"‍🎓",
+"💼",
+"🏡",
+"⛱",
+ */

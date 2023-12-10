@@ -146,6 +146,26 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Получите баллы, просмотрев рекламный ролик!`
+  String get pointsWatchingVideo {
+    return Intl.message(
+      'Получите баллы, просмотрев рекламный ролик!',
+      name: 'pointsWatchingVideo',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Смотреть`
+  String get watch {
+    return Intl.message(
+      'Смотреть',
+      name: 'watch',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

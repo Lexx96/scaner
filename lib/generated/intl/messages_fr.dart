@@ -26,10 +26,12 @@ class MessageLookup extends MessageLookupByLibrary {
     "favorites" : MessageLookupByLibrary.simpleMessage("Favoris"),
     "files" : MessageLookupByLibrary.simpleMessage("Fichiers"),
     "main" : MessageLookupByLibrary.simpleMessage("cardinal"),
+    "pointsWatchingVideo" : MessageLookupByLibrary.simpleMessage("Gagnez des points en regardant la vidéo promotionnelle!"),
     "profile" : MessageLookupByLibrary.simpleMessage("Profil"),
     "recentFiles" : MessageLookupByLibrary.simpleMessage("Fichiers récents"),
     "recentlyYourFiles" : MessageLookupByLibrary.simpleMessage("Vos fichiers avec lesquels vous avez travaillé récemment apparaîtront ici"),
     "scanner" : MessageLookupByLibrary.simpleMessage("Scanner"),
-    "settings" : MessageLookupByLibrary.simpleMessage("Réglages")
+    "settings" : MessageLookupByLibrary.simpleMessage("Réglages"),
+    "watch" : MessageLookupByLibrary.simpleMessage("Regarder")
   };
 }

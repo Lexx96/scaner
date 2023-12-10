@@ -23,9 +23,10 @@ class AddFileButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     final s = context.s;
     return Padding(
-      padding: EdgeInsets.symmetric(
-        horizontal: AppPadding.mainWidth,
-        vertical: 25.a,
+      padding: EdgeInsets.only(
+        top: 25.a,
+        left: AppPadding.mainWidth,
+        right: AppPadding.mainWidth,
       ),
       child: Column(
         children: [

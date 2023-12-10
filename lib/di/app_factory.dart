@@ -1,8 +1,10 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:provider/provider.dart';
+import 'package:scan_me/library/adaptive/adaptive.dart';
 import 'package:scan_me/library/flutter_storages/app_secure_storage.dart';
 import 'package:scan_me/library/flutter_storages/app_shared_preferences.dart';
 import 'package:scan_me/ui/app/app_vm.dart';
+import 'package:scan_me/ui/common/stock/stock_banner.dart';
 import 'package:scan_me/ui/pages/dashboard/dashboard_page.dart';
 import 'package:scan_me/ui/pages/dashboard/dashboard_vm.dart';
 import 'package:scan_me/ui/pages/errors_pages/something_wrong_page.dart';

@@ -1,6 +1,6 @@
-part of '../app_button.dart';
+part of '../app_gradient_button.dart';
 
-/// Обработка данных виджета [AppButton]
+/// Обработка данных виджета [AppGradientButton]
 class ButtonHelper {
 
   late final ValueNotifier<AppButtonData> update;
@@ -8,7 +8,7 @@ class ButtonHelper {
   /// Остановлена ли анимация
   bool? isAnimationStop;
 
-  /// Действие при инициализации [AppButton]
+  /// Действие при инициализации [AppGradientButton]
   void init(List<Color> colorList ) {
     var appData = AppButtonData(
       colorList: colorList,
