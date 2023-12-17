@@ -5,7 +5,6 @@ import 'package:scan_me/ui/animations/favorite_icons_pulse.dart';
 import 'package:scan_me/ui/common/cards/build_items_file_card.dart';
 import 'package:scan_me/ui/common/expanded_single_child_scroll_view.dart';
 import 'package:scan_me/ui/pages/tabs/files/files_vm.dart';
-import 'package:scan_me/ui/theme/src/theme_extension.dart';
 import 'package:scan_me/util/extensions/context_extensions.dart';
 
 class FilesPage extends StatelessWidget {
@@ -21,10 +20,7 @@ class FilesPage extends StatelessWidget {
     return Scaffold(
       body: ExpandedSingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(
-            top: context.systemTopPadding + 25.a,
-            bottom: context.systemBottomPadding,
-          ),
+          padding: EdgeInsets.only(top: 25.a),
           child: Column(
             children: [
               BuildItemsFileCard(

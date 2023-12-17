@@ -5,69 +5,20 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-/// Текущая тема
-enum CurrentTheme { light, dark }
+part 'src/status_bar_manager_helper.dart';
 
-/// Установка настроек системных элементов
-void setStatusBarStyle(
-  CurrentTheme theme, {
-  Brightness? statusBarBrightness,
-  Brightness? systemNavigationBarIconBrightness,
-  Brightness? statusBarIconBrightness,
-  Color? statusBarColor,
-  Color? systemNavigationBarColor,
-  Color? systemNavigationBarDividerColor,
-}) {
-  final isDark = theme == CurrentTheme.dark;
-
-  if (Platform.isIOS) {
-    SystemChrome.setSystemUIOverlayStyle(
-      isDark ? SystemUiOverlayStyle.light : SystemUiOverlayStyle.dark,
-    );
-  } else {
-    if (isDark) {
-      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
-        statusBarBrightness: statusBarBrightness,
-        systemNavigationBarIconBrightness: systemNavigationBarIconBrightness,
-        statusBarIconBrightness: statusBarIconBrightness,
-        statusBarColor: statusBarColor ?? Colors.transparent,
-        systemNavigationBarColor: systemNavigationBarColor,
-        systemNavigationBarDividerColor: systemNavigationBarDividerColor,
-      ));
-    } else {
-      SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.light.copyWith(
-        statusBarBrightness: statusBarBrightness,
-        systemNavigationBarIconBrightness: systemNavigationBarIconBrightness,
-        statusBarIconBrightness: statusBarIconBrightness,
-        statusBarColor: statusBarColor ?? Colors.transparent,
-        systemNavigationBarColor: systemNavigationBarColor,
-        systemNavigationBarDividerColor: systemNavigationBarDividerColor,
-      ));
-    }
-  }
-}
-
-/// Управление системными элементами
-void setEnabledSystemUIMode({
-  required List<SystemUiOverlay> overlays,
-  required SystemUiMode systemUiMode,
-}) {
-  SystemChrome.setEnabledSystemUIMode(
-    SystemUiMode.manual,
-    overlays: overlays,
-  );
-}
+part 'src/status_bar_manager_data.dart';
 
 /// Менеджер управления нативными элементами устройства
 class StatusBarManager extends StatelessWidget {
   /// Дочерний виджет
   final Widget child;
 
-  /// Сделать ли statusBar прозрачным
-  final bool translucent;
-
   /// Текущая тема
   final CurrentTheme theme;
+
+  /// Сделать ли statusBar прозрачным
+  final StatusBar? statusBar;
 
   /// Цвет statusBar
   final Color? statusBarColor;
@@ -93,8 +44,8 @@ class StatusBarManager extends StatelessWidget {
   const StatusBarManager({
     Key? key,
     required this.child,
-    required this.translucent,
     required this.theme,
+    this.statusBar,
     this.statusBarColor,
     this.statusBarIconBrightness,
     this.statusBarBrightness,
@@ -107,8 +58,8 @@ class StatusBarManager extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = theme == CurrentTheme.dark;
-    if(isDark){
-      setStatusBarStyle(
+    if (isDark) {
+      StatusBarManagerHelper.setStatusBarStyle(
         theme,
         statusBarIconBrightness: Brightness.light,
         statusBarColor: statusBarColor ?? Colors.transparent,
@@ -117,8 +68,8 @@ class StatusBarManager extends StatelessWidget {
         systemNavigationBarIconBrightness: Brightness.light,
         systemNavigationBarDividerColor: navigationBarDividerColor,
       );
-    }else{
-      setStatusBarStyle(
+    } else {
+      StatusBarManagerHelper.setStatusBarStyle(
         theme,
         statusBarIconBrightness: Brightness.dark,
         statusBarColor: statusBarColor ?? Colors.transparent,
@@ -129,6 +80,10 @@ class StatusBarManager extends StatelessWidget {
       );
     }
 
-    return translucent ? child : SafeArea(child: child);
+    return StatusBarManagerHelper.getChild(
+      statusBar: statusBar,
+      child: child,
+      context: context,
+    );
   }
 }

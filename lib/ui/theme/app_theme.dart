@@ -1,6 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:scan_me/library/adaptive/adaptive.dart';
-import 'package:scan_me/library/status_bar_manager.dart';
+import 'package:scan_me/library/status_bar_manager/status_bar_manager.dart';
 import 'package:scan_me/ui/resources/fonts_keys.dart';
 import 'package:flutter/material.dart';
 
@@ -31,7 +31,7 @@ abstract class AppTheme {
         AdaptiveTheme.of(context).setSystem();
         break;
     }
-    await updateSavedThemeMode().whenComplete(() => setStatusBarStyle(
+    await updateSavedThemeMode().whenComplete(() => StatusBarManagerHelper.setStatusBarStyle(
           getResultThemeMode == AdaptiveThemeMode.light
               ? CurrentTheme.light
               : CurrentTheme.dark,

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:overlay_support/overlay_support.dart';
 import 'package:scan_me/library/adaptive/adaptive.dart';
 import 'package:scan_me/ui/theme/app_theme.dart';
-import 'package:scan_me/library/status_bar_manager.dart';
+import 'package:scan_me/library/status_bar_manager/status_bar_manager.dart';
 
 import '../../theme/app_colors.dart';
 
@@ -40,7 +40,7 @@ class AppUISettings extends StatelessWidget {
 
             return OverlaySupport.global(
               child: StatusBarManager(
-                translucent: false,
+                statusBar: StatusBar.systemPadding,
                 statusBarColor: color,
                 lightNavigationBarColor: color,
                 theme: CurrentTheme.light,
