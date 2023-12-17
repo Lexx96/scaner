@@ -59,6 +59,7 @@ dependencies:
   image_to_pdf_converter: ^0.0.1
   flutter_animator: ^3.2.2
   animator: ^3.3.0
+  device_info_plus: ^9.1.1
 
 dev_dependencies:
   flutter_test:

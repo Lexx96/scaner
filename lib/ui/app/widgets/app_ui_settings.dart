@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:overlay_support/overlay_support.dart';
 import 'package:scan_me/library/adaptive/adaptive.dart';
 import 'package:scan_me/ui/theme/app_theme.dart';
-import 'package:scan_me/ui/theme/src/theme_extension.dart';
 import 'package:scan_me/library/status_bar_manager.dart';
+
+import '../../theme/app_colors.dart';
 
 typedef AppUIBuilder = Function(ThemeData, ThemeData);
 
@@ -33,11 +34,15 @@ class AppUISettings extends StatelessWidget {
           dark: AppTheme.dark,
           initial: AppTheme.getResultThemeMode,
           builder: (ThemeData light, ThemeData dark) {
+            final color = AppTheme.getResultThemeMode == AdaptiveThemeMode.light
+                ? AppColorsLight.white
+                : AppColorsDark.blackSky;
+
             return OverlaySupport.global(
               child: StatusBarManager(
                 translucent: false,
-                statusBarColor: context.theme.scaffoldBackgroundColor,
-                lightNavigationBarColor: context.theme.scaffoldBackgroundColor,
+                statusBarColor: color,
+                lightNavigationBarColor: color,
                 theme: CurrentTheme.light,
                 child: builder(light, dark),
               ),

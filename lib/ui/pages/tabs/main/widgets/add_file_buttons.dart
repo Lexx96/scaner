@@ -23,38 +23,35 @@ class AddFileButtons extends StatelessWidget {
   Widget build(BuildContext context) {
     final s = context.s;
     return Padding(
-      padding: EdgeInsets.only(
-        top: 25.a,
-        left: AppPadding.mainWidth,
-        right: AppPadding.mainWidth,
-      ),
+      padding: EdgeInsets.only(top: 25.a),
       child: Column(
         children: [
-          TitleWidget(
-            title: s.addFile,
-          ),
+          TitleWidget(title: s.addFile),
           SizedBox(height: 10.a),
-          Row(
-            children: [
-              Expanded(
-                child: AppIconButton(
-                  height: 150.a,
-                  iconSize: 50.a,
-                  innerPadding: 50.a,
-                  icon: CupertinoIcons.camera,
-                  onTap: () {},
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: AppPadding.mainWidth),
+            child: Row(
+              children: [
+                Expanded(
+                  child: AppIconButton(
+                    height: 150.a,
+                    iconSize: 50.a,
+                    innerPadding: 50.a,
+                    icon: CupertinoIcons.camera,
+                    onTap: camera,
+                  ),
                 ),
-              ),
-              SizedBox(width: 5.a),
-              Expanded(
-                child: AppIconButton(
-                  height: 150.a,
-                  iconSize: 50.a,
-                  icon: CupertinoIcons.photo,
-                  onTap: () {},
+                SizedBox(width: 5.a),
+                Expanded(
+                  child: AppIconButton(
+                    height: 150.a,
+                    iconSize: 50.a,
+                    icon: CupertinoIcons.photo,
+                    onTap: gallery,
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ],
       ),
