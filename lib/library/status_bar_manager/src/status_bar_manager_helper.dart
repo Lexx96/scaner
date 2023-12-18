@@ -1,10 +1,13 @@
 part of '../status_bar_manager.dart';
 
+SystemUiOverlayStyle _overlayLight = const SystemUiOverlayStyle();
+SystemUiOverlayStyle _overlayDark = const SystemUiOverlayStyle();
+
 /// Реализация работы библиотеки
 abstract class StatusBarManagerHelper {
   /// Установка настроек системных элементов
-  static void setStatusBarStyle(
-    CurrentTheme theme, {
+  static void setStatusBarStyle({
+    CurrentTheme? theme,
     Brightness? statusBarBrightness,
     Brightness? systemNavigationBarIconBrightness,
     Brightness? statusBarIconBrightness,
@@ -20,24 +23,25 @@ abstract class StatusBarManagerHelper {
       );
     } else {
       if (isDark) {
-        SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
+        _overlayDark = _overlayDark.copyWith(
           statusBarBrightness: statusBarBrightness,
           systemNavigationBarIconBrightness: systemNavigationBarIconBrightness,
           statusBarIconBrightness: statusBarIconBrightness,
           statusBarColor: statusBarColor ?? Colors.transparent,
           systemNavigationBarColor: systemNavigationBarColor,
           systemNavigationBarDividerColor: systemNavigationBarDividerColor,
-        ));
+        );
+        SystemChrome.setSystemUIOverlayStyle(_overlayDark);
       } else {
-        SystemChrome.setSystemUIOverlayStyle(
-            SystemUiOverlayStyle.light.copyWith(
+        _overlayLight = _overlayLight.copyWith(
           statusBarBrightness: statusBarBrightness,
           systemNavigationBarIconBrightness: systemNavigationBarIconBrightness,
           statusBarIconBrightness: statusBarIconBrightness,
           statusBarColor: statusBarColor ?? Colors.transparent,
           systemNavigationBarColor: systemNavigationBarColor,
           systemNavigationBarDividerColor: systemNavigationBarDividerColor,
-        ));
+        );
+        SystemChrome.setSystemUIOverlayStyle(_overlayLight);
       }
     }
   }

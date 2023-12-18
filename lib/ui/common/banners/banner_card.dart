@@ -25,7 +25,7 @@ class BannerCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(AppPadding.mainWidth),
+      margin: EdgeInsets.all(AppPadding.width),
       padding: EdgeInsets.all(18.a),
       decoration: BoxDecoration(
         color: color,

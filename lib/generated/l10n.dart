@@ -166,6 +166,16 @@ class AppLocalizations {
       args: [],
     );
   }
+
+  /// `Изменить фото`
+  String get changePhoto {
+    return Intl.message(
+      'Изменить фото',
+      name: 'changePhoto',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<AppLocalizations> {

@@ -22,6 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
     "addFile" : MessageLookupByLibrary.simpleMessage("Datei hinzufügen"),
+    "changePhoto" : MessageLookupByLibrary.simpleMessage("Foto ändern"),
     "favoriteYourFiles" : MessageLookupByLibrary.simpleMessage("Ihre Lieblingsdateien werden hier angezeigt"),
     "favorites" : MessageLookupByLibrary.simpleMessage("Favoriten"),
     "files" : MessageLookupByLibrary.simpleMessage("Dateien"),

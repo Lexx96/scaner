@@ -45,8 +45,8 @@ class BuildItemsFileCard extends StatelessWidget {
         Visibility(
           visible: items.isNotEmpty,
           replacement: Container(
-            margin: EdgeInsets.all(AppPadding.mainWidth),
-            padding: EdgeInsets.all(AppPadding.mainWidth),
+            margin: EdgeInsets.all(AppPadding.width),
+            padding: EdgeInsets.all(AppPadding.width),
             decoration: BoxDecoration(
               color: context.theme.splashColor,
               borderRadius: BorderRadius.circular(AppBorderRadius.radius10)

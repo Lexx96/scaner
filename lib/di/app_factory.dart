@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:provider/provider.dart';
+import 'package:scan_me/domain/services/user_service.dart';
 import 'package:scan_me/library/adaptive/adaptive.dart';
 import 'package:scan_me/library/flutter_storages/app_secure_storage.dart';
 import 'package:scan_me/library/flutter_storages/app_shared_preferences.dart';
@@ -24,6 +25,7 @@ import 'package:dio/io.dart';
 import 'package:scan_me/domain/config/app_config.dart';
 import 'package:scan_me/domain/config/environment/environment.dart';
 import 'package:scan_me/ui/pages/loading/loading_page.dart';
+import 'package:scan_me/ui/pages/tabs/profile/profile_vm.dart';
 
 import '../ui/navigation/navigation.dart';
 import '../ui/pages/tabs/settings/settings_page.dart';

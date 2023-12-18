@@ -49,20 +49,6 @@ extension ThemeExtension on BuildContext {
     );
   }
 
-  /*
-      Заданы шрифты трёх цветов:
-  Black - условно черный (20, 24, 56, 1),
-  Blue - условно синий (17, 50, 127, 1),
-  Gray - условно  серый (145, 147, 167, 1);
-
-      Расшифровка наименования "mBlack24H" :
-   Позиция № 1 в наименовании это жирность: M(medium) / SB(semibold) - w500/w600;   m - w500
-   Позиция № 2 в наименовании это цвет: Black / Blue / Gray;                        Black -  условно черный
-   Позиция № 3 в наименовании это размер шрифта: 12 / 14 / 16 ...;                  24
-   Позиция № 4 (опционально) в наименовании это высота 150%: H;                     H - height 150%
-
-   */
-
   /// Фигма H1 - Noto Sans size 24, w500, rgba (20, 24, 56, 1)
   TextStyle? white24w500({
     double? fontSize,
@@ -78,18 +64,15 @@ extension ThemeExtension on BuildContext {
     );
   }
 
-  /// ------- Фигма H1 -  три варианта шрифта 24 размера, отличающиеся только цветом. ---------///
-
-  /// Фигма H1 - Noto Sans size 24, w500, rgba (20, 24, 56, 1)
-  TextStyle? mBlack24({
+  TextStyle? blackWhite24w500({
     double? fontSize,
     FontWeight? fontWeight,
     Color? color,
   }) {
     return theme.textTheme.headlineLarge?.copyWith(
       fontSize: fontSize?.a,
-      fontWeight: fontWeight,
-      color: color,
+      fontWeight: FontWeight.w500,
+      color: theme.adaptiveColor(AppColorsLight.black, AppColorsDark.white),
     );
   }
 

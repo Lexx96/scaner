@@ -37,7 +37,7 @@ abstract class YandexMetricaHelper {
     var buffer = StringBuffer();
     for (var i in []) {
       buffer.write(
-        'Наименование: ${i.name}, \nID: ${i.id}, \nСтоимость товара: ${i.price.result}, \nКоличество: ${i.basketCount}\n\n',
+        'Наименование: ${i.surName}, \nID: ${i.id}, \nСтоимость товара: ${i.price.result}, \nКоличество: ${i.basketCount}\n\n',
       );
     }
 

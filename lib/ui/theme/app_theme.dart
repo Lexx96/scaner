@@ -31,11 +31,12 @@ abstract class AppTheme {
         AdaptiveTheme.of(context).setSystem();
         break;
     }
-    await updateSavedThemeMode().whenComplete(() => StatusBarManagerHelper.setStatusBarStyle(
-          getResultThemeMode == AdaptiveThemeMode.light
-              ? CurrentTheme.light
-              : CurrentTheme.dark,
-        ));
+    await updateSavedThemeMode()
+        .whenComplete(() => StatusBarManagerHelper.setStatusBarStyle(
+              theme: getResultThemeMode == AdaptiveThemeMode.light
+                  ? CurrentTheme.light
+                  : CurrentTheme.dark,
+            ));
   }
 
   /// Настройки светлой темы приложения.
@@ -56,7 +57,7 @@ abstract class AppTheme {
     ),
 
     /// Цвета светлой темы.
-    scaffoldBackgroundColor: AppColorsLight.white,
+    scaffoldBackgroundColor: AppColorsLight.white2,
     primaryColor: AppColorsLight.white,
     splashFactory: InkRipple.splashFactory,
     splashColor: AppColorsLight.blue.withOpacity(0.3),
@@ -204,7 +205,7 @@ abstract class AppTheme {
     headlineMedium: TextStyle(
       fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
-      color: AppColorsLight.blackSea,
+      color: AppColorsLight.blue,
       fontWeight: FontWeight.w500,
     ),
 
@@ -305,7 +306,7 @@ abstract class AppTheme {
     headlineMedium: TextStyle(
       fontSize: 24.a,
       fontFamily: FontsKeys.natoMedium,
-      color: AppColorsLight.blackSea,
+      color: AppColorsLight.blue,
       fontWeight: FontWeight.w500,
     ),
 

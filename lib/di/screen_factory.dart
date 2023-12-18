@@ -94,7 +94,10 @@ class IProfilePage implements AutoRouteWrapper {
 
   @override
   Widget wrappedRoute(_) {
-    return const ProfilePage();
+    return ChangeNotifierProvider(
+      create: _diContainer._makeProfileVM,
+      child: const ProfilePage(),
+    );
   }
 }
 

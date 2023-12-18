@@ -40,8 +40,6 @@ class AppUISettings extends StatelessWidget {
 
             return OverlaySupport.global(
               child: StatusBarManager(
-                statusBar: StatusBar.systemPadding,
-                statusBarColor: color,
                 lightNavigationBarColor: color,
                 theme: CurrentTheme.light,
                 child: builder(light, dark),

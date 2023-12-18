@@ -25,8 +25,8 @@ class ItemFileCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.only(
-        left: index == 0 ? AppPadding.mainWidth : 0,
-        right: index + 1 == 10 ? AppPadding.mainWidth : 10.a,
+        left: index == 0 ? AppPadding.width : 0,
+        right: index + 1 == 10 ? AppPadding.width : 10.a,
         bottom: 10.a,
         top: 10.a,
       ),

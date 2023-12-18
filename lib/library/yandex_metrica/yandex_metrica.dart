@@ -1,6 +1,7 @@
 import 'package:appmetrica_plugin/appmetrica_plugin.dart';
 import 'package:decimal/decimal.dart';
 import 'package:appmetrica_plugin/src/ecommerce_event.dart';
+import 'package:scan_me/domain/entity/user.dart';
 
 part 'src/yandex_metrica_helper.dart';
 
@@ -92,8 +93,4 @@ class YandexMetrica {
     );
   }
 }
-
-
-/// TODO Убрать - заглушки
-class User {}
 class Product {}

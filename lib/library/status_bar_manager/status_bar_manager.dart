@@ -60,7 +60,7 @@ class StatusBarManager extends StatelessWidget {
     final isDark = theme == CurrentTheme.dark;
     if (isDark) {
       StatusBarManagerHelper.setStatusBarStyle(
-        theme,
+        theme : theme,
         statusBarIconBrightness: Brightness.light,
         statusBarColor: statusBarColor ?? Colors.transparent,
         statusBarBrightness: statusBarBrightness,
@@ -70,7 +70,7 @@ class StatusBarManager extends StatelessWidget {
       );
     } else {
       StatusBarManagerHelper.setStatusBarStyle(
-        theme,
+        theme : theme,
         statusBarIconBrightness: Brightness.dark,
         statusBarColor: statusBarColor ?? Colors.transparent,
         statusBarBrightness: statusBarBrightness,

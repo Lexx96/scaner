@@ -24,11 +24,14 @@ part of 'app_factory.dart';
 
 class _DIContainer {
   static final _DIContainer _instance = _DIContainer._();
+  late IUserService _userService;
 
   ///Тут объявляются хранимые свойства
   ///
   ///
   _DIContainer._() {
+    _userService = UserService();
+
     ///Тут инициализируются хранимые свойства
     ///
     ///
@@ -59,6 +62,13 @@ class _DIContainer {
   FilesVM _makeFilesVM(BuildContext context) => FilesVM(
         state: FilesVMState(),
         context: context,
+      );
+
+  ///profile
+  ProfileVM _makeProfileVM(BuildContext context) => ProfileVM(
+        ProfileState(),
+        context: context,
+        userService: _diContainer._userService,
       );
 
   /// internal

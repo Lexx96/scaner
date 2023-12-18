@@ -24,10 +24,10 @@ class TitleWidget extends StatelessWidget {
         Visibility(
           visible: title.isNotEmpty,
           child: Padding(
-            padding: EdgeInsets.only(left: AppPadding.mainWidth),
+            padding: EdgeInsets.only(left: AppPadding.width),
             child: Text(
               title,
-              style: context.mBlack24(),
+              style: context.blackWhite24w500(),
             ),
           ),
         ),
